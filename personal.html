@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>
+    Personal - Centro Educativo Cooperativa Ypacaraí
+  </title>
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet"
+        href="css/estilos.css">
+
+</head>
+
+<body class="personal-page">
+
+<!-- LOADER -->
+<div id="loader">
+
+  <img src="img/cecy-escudo.png?v=2"
+       class="loader-logo"
+       alt="CECY">
+
+  <h2>CECY</h2>
+
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-pro fixed-top">
+
+  <div class="container">
+
+    <a class="navbar-brand d-flex align-items-center"
+       href="index.html">
+
+      <img src="img/cecy-escudo.png?v=2"
+           class="mini-logo"
+           alt="CECY">
+
+      <span class="ms-2 fw-bold">
+        CECY
+      </span>
+
+    </a>
+
+    <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu">
+
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <div class="collapse navbar-collapse"
+         id="menu">
+
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link"
+             href="index.html">
+             Inicio
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link"
+             href="about.html">
+             Nosotros
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link"
+             href="niveles.html">
+             Niveles
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active"
+             href="personal.html">
+             Personal
+          </a>
+        </li>
+<li class="nav-item">
+
+  <a class="nav-link"
+     href="galeria.html">
+
+     Galería
+
+  </a>
+
+</li>
+</ul>
+
+    </div>
+
+  </div>
+
+</nav>
+
+<!-- ESPACIO NAVBAR -->
+<div style="margin-top: 100px;"></div>
+
+<!-- CONTENIDO -->
+<section class="container py-5">
+
+  <h2 class="section-title">
+    👨‍🏫 Personal Docente y Administrativo
+  </h2>
+
+  <!-- BUSCADOR -->
+  <div class="buscador-personal mb-4">
+
+    <div class="row g-3 align-items-end">
+
+      <div class="col-md-6">
+        <label for="buscador-texto" class="form-label buscador-label">
+          Buscar por nombre, apellido o cargo
+        </label>
+        <input type="text"
+               id="buscador-texto"
+               class="form-control"
+               placeholder="Ej: Benítez, Directora, Matemática...">
+      </div>
+
+      <div class="col-md-4">
+        <label for="filtro-categoria" class="form-label buscador-label">
+          Filtrar por área
+        </label>
+        <select id="filtro-categoria" class="form-select">
+          <option value="todos">Todas las áreas</option>
+          <option value="direccion">Dirección y equipo técnico</option>
+          <option value="administrativo">Administrativo</option>
+          <option value="inicial">Docentes · Nivel Inicial</option>
+          <option value="primaria">Docentes · 1.º a 6.º grado</option>
+          <option value="terciario-medio">Docentes · Tercer Ciclo y Bachillerato</option>
+          <option value="area">Docentes de Área</option>
+          <option value="servicios">Servicios Generales</option>
+        </select>
+      </div>
+
+      <div class="col-md-2 d-grid">
+        <button type="button" id="btn-limpiar" class="btn btn-outline-secondary">
+          Limpiar
+        </button>
+      </div>
+
+    </div>
+
+    <p id="contador-resultados" class="contador-personal mt-3" aria-live="polite"></p>
+
+  </div>
+
+  <!-- SIN RESULTADOS -->
+  <div id="sin-resultados" class="sin-resultados text-center py-5" hidden>
+    <p class="fs-4">😕 No se encontró ningún integrante con esos criterios.</p>
+    <p class="text-muted">Probá con otro nombre, apellido, cargo o área.</p>
+  </div>
+
+  <div id="grid-personal">
+
+  <!-- GRUPO: Dirección y equipo técnico -->
+  <div class="grupo-personal" data-grupo="direccion">
+    <h3 class="grupo-titulo">🏛️ Dirección y equipo técnico <span class="grupo-cuenta">(5)</span></h3>
+    <div class="row g-4 mb-5">
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="direccion" data-nombre="nancy estelvina benítez" data-cargo="directora" data-curriculum="Formación:&#10;• Mgt. en Ciencias de la Educación&#10;• Profesora de Educación Primaria&#10;• Profesora de Lengua Guaraní&#10;• Mgt. en Educación Guaraní&#10;• Esp. en Didáctica Universitaria&#10;• Especialista en Evaluación&#10;&#10;En la institución desde 2023.">
+  <div class="card-persona">
+    <img src="img/p1.jpg" class="img-persona" alt="Foto de Nancy Estelvina Benítez" loading="lazy">
+    <h5>Nancy Estelvina Benítez</h5>
+    <p class="cargo">Directora</p>
+    <p class="mensaje">"La educación transforma vidas."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="direccion" data-nombre="iván ortega" data-cargo="psicopedagogo" data-curriculum="Formación:&#10;• Lic. Psicología Educacional&#10;• Diplomado en Derechos Humanos y Proteccion Social&#10;&#10;En la institución desde 2026.">
+  <div class="card-persona">
+    <img src="img/p4.jpg" class="img-persona" alt="Foto de Iván Ortega" loading="lazy">
+    <h5>Iván Ortega</h5>
+    <p class="cargo">Psicopedagogo</p>
+    <p class="mensaje">"Aprender también es acompañar."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="direccion" data-nombre="liza fernández" data-cargo="psicóloga" data-curriculum="Formación:&#10;• Prof. en Educación Escolar Básica&#10;• Lic. en Psicología&#10;• Especialista en Didáctica Universitaria&#10;• Técnico Docente en Educación Inclusiva&#10;• Técnico Docente en Gestión Educativa&#10;&#10;En la institución desde 2015.">
+  <div class="card-persona">
+    <img src="img/p5.jpg" class="img-persona" alt="Foto de Liza Fernández" loading="lazy">
+    <h5>Liza Fernández</h5>
+    <p class="cargo">Psicóloga</p>
+    <p class="mensaje">"Cuidar la mente es educar."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="direccion" data-nombre="nicolás espínola" data-cargo="profesor guía" data-curriculum="Formación:&#10;• Profesor de Educación Escolar Básica 1ro y 2do ciclos&#10;&#10;En la institución desde 2024.">
+  <div class="card-persona">
+    <img src="img/p6.jpg" class="img-persona" alt="Foto de Nicolás Espínola" loading="lazy">
+    <h5>Nicolás Espínola</h5>
+    <p class="cargo">Profesor Guía</p>
+    <p class="mensaje">"El éxito es constancia."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="direccion" data-nombre="mirian delgado" data-cargo="coordinadora" data-curriculum="Formación:&#10;• Lic. en Enfermería&#10;• Profesora en Pedagogía&#10;• Tec. Educación Inclusiva&#10;&#10;En la institución desde 2024.">
+  <div class="card-persona">
+    <img src="img/p7.jpg" class="img-persona" alt="Foto de Mirian Delgado" loading="lazy">
+    <h5>Mirian Delgado</h5>
+    <p class="cargo">Coordinadora</p>
+    <p class="mensaje">"Educación con liderazgo."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <!-- GRUPO: Administrativo -->
+  <div class="grupo-personal" data-grupo="administrativo">
+    <h3 class="grupo-titulo">🗂️ Administrativo <span class="grupo-cuenta">(2)</span></h3>
+    <div class="row g-4 mb-5">
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="administrativo" data-nombre="mariza espínola" data-cargo="secretaria" data-curriculum="Formación:&#10;• Profesora de Educación Escolar Básica 1° y 2° ciclo&#10;• Lic. en Ciencias de la Educación&#10;&#10;En la institución desde 2015.">
+  <div class="card-persona">
+    <img src="img/p2.jpg" class="img-persona" alt="Foto de Mariza Espínola" loading="lazy">
+    <h5>Mariza Espínola</h5>
+    <p class="cargo">Secretaria</p>
+    <p class="mensaje">"Organización y compromiso."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="administrativo" data-nombre="anahí ortigoza" data-cargo="secretaria asistente" data-curriculum="Formación:&#10;• Prof. en Danza&#10;• Lic. Psicología Clínica - Proceso de Tesis&#10;• Lic. Educación Escolar Básica-Cursando">
+  <div class="card-persona">
+    <img src="img/p3.jpg" class="img-persona" alt="Foto de Anahí Ortigoza" loading="lazy">
+    <h5>Anahí Ortigoza</h5>
+    <p class="cargo">Secretaria Asistente</p>
+    <p class="mensaje">"Siempre al servicio."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <!-- GRUPO: Docentes · Nivel Inicial -->
+  <div class="grupo-personal" data-grupo="inicial">
+    <h3 class="grupo-titulo">🧸 Docentes · Nivel Inicial <span class="grupo-cuenta">(4)</span></h3>
+    <div class="row g-4 mb-5">
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="inicial" data-nombre="leticia benítez" data-cargo="jardín ayudante" data-curriculum="">
+  <div class="card-persona">
+    <img src="img/p8.jpg" class="img-persona" alt="Foto de Leticia Benítez" loading="lazy">
+    <h5>Leticia Benítez</h5>
+    <p class="cargo">Jardín Ayudante</p>
+    <p class="mensaje">"Aprender jugando."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="inicial" data-nombre="paola gómez" data-cargo="preescolar ayudante" data-curriculum="Formación:&#10;• Lic. en Educación en Escolar Básica 1° y 2° ciclo - Cursando&#10;&#10;En la institución desde 2025.">
+  <div class="card-persona">
+    <img src="img/p9.jpg" class="img-persona" alt="Foto de Paola Gómez" loading="lazy">
+    <h5>Paola Gómez</h5>
+    <p class="cargo">Preescolar Ayudante</p>
+    <p class="mensaje">"Cada niño es único."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="inicial" data-nombre="zunilda mendez" data-cargo="pre escolar" data-curriculum="Formación:&#10;• Profe. Educación Inicial&#10;• Mgtr.Ciencias de la Educación&#10;&#10;En la institución desde 2011.">
+  <div class="card-persona">
+    <img src="img/p11.jpg" class="img-persona" alt="Foto de Zunilda Mendez" loading="lazy">
+    <h5>Zunilda Mendez</h5>
+    <p class="cargo">Pre escolar</p>
+    <p class="mensaje">"Aprender es parte de crecer"</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="inicial" data-nombre="laura rojas" data-cargo="inicial" data-curriculum="Formación:&#10;• Lic. en Educación Inicial&#10;&#10;En la institución desde 2025.">
+  <div class="card-persona">
+    <img src="img/p42.jpg" class="img-persona" alt="Foto de Laura Rojas" loading="lazy">
+    <h5>Laura Rojas</h5>
+    <p class="cargo">Inicial</p>
+    <p class="mensaje">"El inicio del camino hacia el aprendizaje."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <!-- GRUPO: Docentes · 1.º a 6.º grado -->
+  <div class="grupo-personal" data-grupo="primaria">
+    <h3 class="grupo-titulo">📚 Docentes · 1.º a 6.º grado <span class="grupo-cuenta">(8)</span></h3>
+    <div class="row g-4 mb-5">
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="primaria" data-nombre="licie centurión" data-cargo="ayudante 2° grado" data-curriculum="Formación:&#10;• Lic. en Educación Escolar Básica 1°y 2° ciclo">
+  <div class="card-persona">
+    <img src="img/p10.jpg" class="img-persona" alt="Foto de Licie Centurión" loading="lazy">
+    <h5>Licie Centurión</h5>
+    <p class="cargo">Ayudante 2° Grado</p>
+    <p class="mensaje">"Educar con paciencia."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="primaria" data-nombre="faviola ojeda" data-cargo="1° grado" data-curriculum="Formación:&#10;• Lic. en Educación en Escolar Básica 1° y 2° ciclo&#10;&#10;En la institución desde 2018.">
+  <div class="card-persona">
+    <img src="img/p17.jpg" class="img-persona" alt="Foto de Faviola Ojeda" loading="lazy">
+    <h5>Faviola Ojeda</h5>
+    <p class="cargo">1° Grado</p>
+    <p class="mensaje">"Educando para el futuro."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="primaria" data-nombre="esther morinigo" data-cargo="2° grado" data-curriculum="Formación:&#10;• Profesora en Educación Escolar Básica 1° y 2° Ciclos&#10;• Profesora en Especialización en Ciencias de la Naturaleza y la Salud&#10;&#10;En la institución desde 2009.">
+  <div class="card-persona">
+    <img src="img/p18.jpg" class="img-persona" alt="Foto de Esther Morinigo" loading="lazy">
+    <h5>Esther Morinigo</h5>
+    <p class="cargo">2° Grado</p>
+    <p class="mensaje">"Inspirando estudiantes."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="primaria" data-nombre="maria del carmen vera" data-cargo="3° grado" data-curriculum="Formación:&#10;• Profesora de Educación Escolar Básica 1° y 2° Ciclos&#10;• Prof. en Educación Artística&#10;&#10;En la institución desde 2023.">
+  <div class="card-persona">
+    <img src="img/p19.jpg" class="img-persona" alt="Foto de Maria del Carmen Vera" loading="lazy">
+    <h5>Maria del Carmen Vera</h5>
+    <p class="cargo">3° Grado</p>
+    <p class="mensaje">"Aprender es crecer."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="primaria" data-nombre="dalila ozorio" data-cargo="4° grado" data-curriculum="Formación:&#10;• Profesor de Educación Escolar Básica&#10;• Profesor de Lengua Guaraní de Educación Media&#10;• Especialista en Gestión Educativa&#10;&#10;En la institución desde 2024.">
+  <div class="card-persona">
+    <img src="img/p20.jpg" class="img-persona" alt="Foto de Dalila Ozorio" loading="lazy">
+    <h5>Dalila Ozorio</h5>
+    <p class="cargo">4° Grado</p>
+    <p class="mensaje">"La educación abre caminos."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="primaria" data-nombre="elaine benitez" data-cargo="5° grado" data-curriculum="Formación:&#10;• Profesora de Educación 1° y 2° Ciclo&#10;&#10;En la institución desde 2016.">
+  <div class="card-persona">
+    <img src="img/p21.jpg" class="img-persona" alt="Foto de Elaine Benitez" loading="lazy">
+    <h5>Elaine Benitez</h5>
+    <p class="cargo">5° Grado</p>
+    <p class="mensaje">"La educación inspira."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="primaria" data-nombre="paola lopez" data-cargo="6° grado" data-curriculum="Formación:&#10;• Profesora de Educación Escolar Básica 1ro y 2do ciclo&#10;• Especialista en Gestión Educativa&#10;&#10;En la institución desde 2018.">
+  <div class="card-persona">
+    <img src="img/p22.jpg" class="img-persona" alt="Foto de Paola Lopez" loading="lazy">
+    <h5>Paola Lopez</h5>
+    <p class="cargo">6° Grado</p>
+    <p class="mensaje">"Siempre aprendiendo."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="primaria" data-nombre="lourdes lezcano" data-cargo="aula apoyo" data-curriculum="Formación:&#10;• Prof de Educación Primaria&#10;• Especialista en Evaluación&#10;• Especialista en Gestión Educativa&#10;&#10;En la institución desde 2019.">
+  <div class="card-persona">
+    <img src="img/p23.jpg" class="img-persona" alt="Foto de Lourdes Lezcano" loading="lazy">
+    <h5>Lourdes Lezcano</h5>
+    <p class="cargo">Aula Apoyo</p>
+    <p class="mensaje">"Educar con pasión."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <!-- GRUPO: Docentes · Tercer Ciclo y Bachillerato -->
+  <div class="grupo-personal" data-grupo="terciario-medio">
+    <h3 class="grupo-titulo">🎓 Docentes · Tercer Ciclo y Bachillerato <span class="grupo-cuenta">(13)</span></h3>
+    <div class="row g-4 mb-5">
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="terciario-medio" data-nombre="luz olmedo" data-cargo="informática - nivel medio" data-curriculum="Formación:&#10;• Lic. en Análisis de Sistemas Informáticos&#10;• Ing. en Informática&#10;• Tec. en Integración Pedagógica de las TIC&#10;• Mgt. en Ciencias de la Educación&#10;• Esp. en Didáctica Universitaria&#10;&#10;En la institución desde 2025.">
+  <div class="card-persona">
+    <img src="img/p14.jpg" class="img-persona" alt="Foto de Luz Olmedo" loading="lazy">
+    <h5>Luz Olmedo</h5>
+    <p class="cargo">Informática - Nivel Medio</p>
+    <p class="mensaje">"El futuro es digital."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="terciario-medio" data-nombre="rocio correa" data-cargo="física y química" data-curriculum="Formación:&#10;• Profesor en Ciencias Básicas. Con Énfasis en Quimica&#10;• Mgtr en Ciencias de la Educación&#10;&#10;En la institución desde 2014.">
+  <div class="card-persona">
+    <img src="img/p25.jpg" class="img-persona" alt="Foto de Rocio Correa" loading="lazy">
+    <h5>Rocio Correa</h5>
+    <p class="cargo">Física y Química</p>
+    <p class="mensaje">"Transformando el esfuerzo en éxito."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="terciario-medio" data-nombre="gustavo vallejos" data-cargo="liderazgo y servicio social ética" data-curriculum="">
+  <div class="card-persona">
+    <img src="img/p28.jpg" class="img-persona" alt="Foto de Gustavo Vallejos" loading="lazy">
+    <h5>Gustavo Vallejos</h5>
+    <p class="cargo">Liderazgo y Servicio Social Ética</p>
+    <p class="mensaje">"Liderar es servir con integridad."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="terciario-medio" data-nombre="mirta petrona cabrera" data-cargo="lengua y literatura castellana" data-curriculum="Formación:&#10;• Lic .en Ciencias de la Educación&#10;• Prof. de Educación Idiomática Español y Guaraní&#10;• Especialista en Gestión Educativa&#10;&#10;En la institución desde 2020.">
+  <div class="card-persona">
+    <img src="img/p29.jpg" class="img-persona" alt="Foto de Mirta Petrona Cabrera" loading="lazy">
+    <h5>Mirta Petrona Cabrera</h5>
+    <p class="cargo">Lengua y Literatura Castellana</p>
+    <p class="mensaje">"El poder de la palabra escrita."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="terciario-medio" data-nombre="lourdes vallejos" data-cargo="trabajo y tecnología 9° grado" data-curriculum="Formación:&#10;• Profesora de EEB primero y segundo ciclo&#10;• Profesora de Trabajo y Tecnología&#10;• Lic en Ciencias de la Educación&#10;&#10;En la institución desde 2010.">
+  <div class="card-persona">
+    <img src="img/p30.jpg" class="img-persona" alt="Foto de Lourdes Vallejos" loading="lazy">
+    <h5>Lourdes Vallejos</h5>
+    <p class="cargo">Trabajo y Tecnología 9° Grado</p>
+    <p class="mensaje">"Habilidades prácticas para el mundo real."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="terciario-medio" data-nombre="mercedes benitez" data-cargo="trabajo y tecnología 7° y 8° grado" data-curriculum="Formación:&#10;• Prof. en Manualidades&#10;• Prof. en Lengua Guaraní&#10;&#10;En la institución desde 2020.">
+  <div class="card-persona">
+    <img src="img/p31.jpg" class="img-persona" alt="Foto de Mercedes Benitez" loading="lazy">
+    <h5>Mercedes Benitez</h5>
+    <p class="cargo">Trabajo y Tecnología 7° y 8° Grado</p>
+    <p class="mensaje">"Transformando ideas en proyectos reales."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="terciario-medio" data-nombre="elva salidavar" data-cargo="historia y geografía 3° ciclo" data-curriculum="">
+  <div class="card-persona">
+    <img src="img/p32.jpg" class="img-persona" alt="Foto de Elva Salidavar" loading="lazy">
+    <h5>Elva Salidavar</h5>
+    <p class="cargo">Historia y Geografía 3° Ciclo</p>
+    <p class="mensaje">"Explorando las huellas de la humanidad."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="terciario-medio" data-nombre="leticia pérez" data-cargo="proyecto, historia, geografía y economía" data-curriculum="Formación:&#10;• Profesor de Ciencias Sociales Educación Media&#10;• Licenciado en Ciencias de la Educación con Énfasis en Ciencias Sociales&#10;&#10;En la institución desde 2014.">
+  <div class="card-persona">
+    <img src="img/p34.jpg" class="img-persona" alt="Foto de Leticia Pérez" loading="lazy">
+    <h5>Leticia Pérez</h5>
+    <p class="cargo">Proyecto, Historia, Geografía y Economía</p>
+    <p class="mensaje">"Comprendiendo el pasado para proyectar el futuro."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="terciario-medio" data-nombre="evangelica mareco" data-cargo="matemática plan común y aplicada" data-curriculum="Formación:&#10;• Lic. en Matemática Pura&#10;&#10;En la institución desde 2014.">
+  <div class="card-persona">
+    <img src="img/p35.jpg" class="img-persona" alt="Foto de Evangelica Mareco" loading="lazy">
+    <h5>Evangelica Mareco</h5>
+    <p class="cargo">Matemática Plan Común y Aplicada</p>
+    <p class="mensaje">"Resolviendo problemas y descubriendo patrones."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="terciario-medio" data-nombre="nancy dominguez" data-cargo="matemática plan común" data-curriculum="Formación:&#10;• Prof de Esc Bás 1ro y 2do ciclo&#10;• Prof de Guaraní&#10;• Orientadora Educ y Vocacional con énfasis en Tutoria&#10;• Lic. en Matemática Estadística&#10;• Lic. Matemática Pura&#10;• Lic. en Contaduría Pública&#10;&#10;En la institución desde 2014.">
+  <div class="card-persona">
+    <img src="img/p37.jpg" class="img-persona" alt="Foto de Nancy Dominguez" loading="lazy">
+    <h5>Nancy Dominguez</h5>
+    <p class="cargo">Matemática Plan Común</p>
+    <p class="mensaje">"La matemática conecta todas las disciplinas."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="terciario-medio" data-nombre="sonia nuñez" data-cargo="administración de empresas" data-curriculum="">
+  <div class="card-persona">
+    <img src="img/p38.jpg" class="img-persona" alt="Foto de Sonia Nuñez" loading="lazy">
+    <h5>Sonia Nuñez</h5>
+    <p class="cargo">Administración de Empresas</p>
+    <p class="mensaje">"Transformando ideas en negocios sostenibles."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="terciario-medio" data-nombre="carla villagra" data-cargo="inglés 1° año" data-curriculum="Formación:&#10;• Lic. en Lengua Inglesa&#10;&#10;En la institución desde 2026.">
+  <div class="card-persona">
+    <img src="img/p40.jpg" class="img-persona" alt="Foto de Carla Villagra" loading="lazy">
+    <h5>Carla Villagra</h5>
+    <p class="cargo">Inglés 1° Año</p>
+    <p class="mensaje">"Abriendo puertas al mundo."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="terciario-medio" data-nombre="rossana rodriguez" data-cargo="hardware - nivel medio" data-curriculum="Formación:&#10;• Ing. en Informática&#10;• Especialista en Didáctica Universitaria&#10;&#10;En la institución desde 2014.">
+  <div class="card-persona">
+    <img src="img/p41.jpg" class="img-persona" alt="Foto de Rossana Rodriguez" loading="lazy">
+    <h5>Rossana Rodriguez</h5>
+    <p class="cargo">Hardware - Nivel Medio</p>
+    <p class="mensaje">"Conectando tecnología con soluciones reales."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <!-- GRUPO: Docentes de Área -->
+  <div class="grupo-personal" data-grupo="area">
+    <h3 class="grupo-titulo">🎨 Docentes de Área <span class="grupo-cuenta">(8)</span></h3>
+    <div class="row g-4 mb-5">
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="area" data-nombre="alejandra duré" data-cargo="inglés" data-curriculum="Formación:&#10;• Lic. en Lengua Inglesa&#10;&#10;En la institución desde 2019.">
+  <div class="card-persona">
+    <img src="img/p12.jpg" class="img-persona" alt="Foto de Alejandra Duré" loading="lazy">
+    <h5>Alejandra Duré</h5>
+    <p class="cargo">Inglés</p>
+    <p class="mensaje">"Aprender idiomas abre puertas."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="area" data-nombre="rodrigo paredes" data-cargo="matemática" data-curriculum="Formación:&#10;• Lic. en Educación Matemática&#10;• Esp. en Didáctica Universitaria&#10;• Mgt. en Didáctica de las Matemáticas - Proceso&#10;&#10;En la institución desde 2025.">
+  <div class="card-persona">
+    <img src="img/p13.jpg" class="img-persona" alt="Foto de Rodrigo Paredes" loading="lazy">
+    <h5>Rodrigo Paredes</h5>
+    <p class="cargo">Matemática</p>
+    <p class="mensaje">"La lógica es poder."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="area" data-nombre="esperanza ferreira de arrua" data-cargo="manualidades" data-curriculum="">
+  <div class="card-persona">
+    <img src="img/p24.jpg" class="img-persona" alt="Foto de Esperanza Ferreira de Arrua" loading="lazy">
+    <h5>Esperanza Ferreira de Arrua</h5>
+    <p class="cargo">Manualidades</p>
+    <p class="mensaje">"Construyendo futuro."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="area" data-nombre="manuel alvarez" data-cargo="artes" data-curriculum="">
+  <div class="card-persona">
+    <img src="img/p26.jpg" class="img-persona" alt="Foto de Manuel Alvarez" loading="lazy">
+    <h5>Manuel Alvarez</h5>
+    <p class="cargo">Artes</p>
+    <p class="mensaje">"Creando mundos a través del color."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="area" data-nombre="denis segovia" data-cargo="educación física" data-curriculum="Formación:&#10;• Profesor de Educación Física y Salud&#10;• Licenciado en Ciencias del Deporte&#10;• Técnico docente en TIC&#10;• Magíster en Educación Física&#10;&#10;En la institución desde 2011.">
+  <div class="card-persona">
+    <img src="img/p27.jpg" class="img-persona" alt="Foto de Denis Segovia" loading="lazy">
+    <h5>Denis Segovia</h5>
+    <p class="cargo">Educación Física</p>
+    <p class="mensaje">"Mente sana, cuerpo sano."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="area" data-nombre="ninfa osnhagi" data-cargo="guaraní" data-curriculum="Formación:&#10;• Profesor en Lengua Guaraní&#10;• Licenciatura en Lengua Guaraní&#10;• Evaluador Educacional&#10;• Posgrado en Didáctica Universitaria&#10;• Especialista en Aprendizajes Basados en Redes y Liderazgo Pedagogico&#10;• Maestría en Lengua Guaraní&#10;• Lic. en Antropología Cultural&#10;• Instituto De Educación Superior “Ateneo de Lengua y Cultura Guaraní&#10;&#10;En la institución desde 2010.">
+  <div class="card-persona">
+    <img src="img/p33.jpg" class="img-persona" alt="Foto de Ninfa Osnhagi" loading="lazy">
+    <h5>Ninfa Osnhagi</h5>
+    <p class="cargo">Guaraní</p>
+    <p class="mensaje">"Ñamombarete ñane ñe'ẽ."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="area" data-nombre="nancy ramirez" data-cargo="ciencias naturales y salud" data-curriculum="Formación:&#10;• Prof.en Educación Escolar Básica&#10;• Prof. Especialista en Ciencias Naturales y Salud&#10;• Lic. en Psicología&#10;• Técnico Docente en Evaluación Educativa&#10;• Técnico Docente en TIC en el aula&#10;&#10;En la institución desde 2015.">
+  <div class="card-persona">
+    <img src="img/p36.jpg" class="img-persona" alt="Foto de Nancy Ramirez" loading="lazy">
+    <h5>Nancy Ramirez</h5>
+    <p class="cargo">Ciencias Naturales y Salud</p>
+    <p class="mensaje">"Comprendiendo la vida para cuidar el bienestar."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="area" data-nombre="vivian saguier" data-cargo="informática" data-curriculum="Formación:&#10;• Esp. en Microsoft Office&#10;• Contadora Pública&#10;• Prof. Lengua Guaraní de Educ. Media&#10;• Cursando la Carrera de Derecho&#10;&#10;En la institución desde 2007.">
+  <div class="card-persona">
+    <img src="img/p39.jpg" class="img-persona" alt="Foto de Vivian Saguier" loading="lazy">
+    <h5>Vivian Saguier</h5>
+    <p class="cargo">Informática</p>
+    <p class="mensaje">"Diseñando el futuro digital bit a bit."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <!-- GRUPO: Servicios generales -->
+  <div class="grupo-personal" data-grupo="servicios">
+    <h3 class="grupo-titulo">🧹 Servicios generales <span class="grupo-cuenta">(3)</span></h3>
+    <div class="row g-4 mb-5">
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="servicios" data-nombre="laura rolón" data-cargo="limpieza" data-curriculum="">
+  <div class="card-persona">
+    <img src="img/p15.jpg" class="img-persona" alt="Foto de Laura Rolón" loading="lazy">
+    <h5>Laura Rolón</h5>
+    <p class="cargo">Limpieza</p>
+    <p class="mensaje">"Un ambiente limpio es salud."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="servicios" data-nombre="wilfrido bóveda" data-cargo="portería" data-curriculum="">
+  <div class="card-persona">
+    <img src="img/p16.jpg" class="img-persona" alt="Foto de Wilfrido Bóveda" loading="lazy">
+    <h5>Wilfrido Bóveda</h5>
+    <p class="cargo">Portería</p>
+    <p class="mensaje">"Seguridad primero."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-sm-6 persona" data-categoria="servicios" data-nombre="wilfrido caceres" data-cargo="limpieza" data-curriculum="">
+  <div class="card-persona">
+    <img src="img/p43.jpg" class="img-persona" alt="Foto de Wilfrido Caceres" loading="lazy">
+    <h5>Wilfrido Caceres</h5>
+    <p class="cargo">Limpieza</p>
+    <p class="mensaje">"El orden y la higiene son bienestar."</p>
+  <button type="button" class="btn btn-sm btn-outline-success btn-curriculum mt-2">
+    Ver currículum
+  </button>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  </div>
+</section>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/595961713224"
+   class="float-whatsapp"
+   target="_blank">
+
+   💬
+
+</a>
+
+<!-- FOOTER -->
+<footer class="footer-pro">
+
+  <h4>
+    Centro Educativo Cooperativa Ypacaraí
+  </h4>
+
+  <p>
+    Educación con valores,
+    innovación y compromiso.
+  </p>
+
+  <div class="mt-3">
+
+    <a href="index.html"
+       class="footer-link">
+       Inicio
+    </a>
+
+    <a href="about.html"
+       class="footer-link">
+       Nosotros
+    </a>
+
+    <a href="niveles.html"
+       class="footer-link">
+       Niveles
+    </a>
+
+    <a href="personal.html"
+       class="footer-link">
+       Personal
+    </a>
+
+  </div>
+
+  <p class="mt-3 mb-0">📍 Mcal. López c/ PY02, Barrio La Victoria – Ypacaraí<br>🕖 Horario de atención: de 07:00 a 15:00 hs · 📱 WhatsApp 0961 713 224</p>
+
+  <p class="mt-2 mb-0 small">Escuela Básica N.° 6.505 “Centro Cooperativo de Educación Ypacarai” · Colegio Politécnico “Cooperativa Ypacarai LTDA”</p>
+
+  <p class="mt-3">
+    © 2026 CECY - Todos los derechos reservados
+  </p>
+
+</footer>
+
+<!-- FIRMA -->
+<div class="firma-dev">
+
+  <div class="firma-logo">
+    CCPM
+  </div>
+
+  <div class="firma-linea"></div>
+
+  <div class="firma-nombres">
+    Camilo • Cesar • Payi • Mathi
+  </div>
+
+</div>
+
+<!-- MODAL CURRICULUM -->
+<div class="modal fade" id="modalCurriculum" tabindex="-1" aria-labelledby="modalCurriculumLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header modal-header-cecy">
+        <h5 class="modal-title" id="modalCurriculumLabel">Currículum</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+
+      <div class="modal-body">
+        <div id="modalCurriculumFoto" class="text-center mb-3"></div>
+        <h5 id="modalCurriculumNombre" class="text-center"></h5>
+        <p id="modalCurriculumCargo" class="cargo text-center"></p>
+        <hr>
+        <p id="modalCurriculumTexto" class="mb-0"></p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS PROPIO DEL SITIO (buscador + fallback de imágenes) -->
+<script src="js/site.js"></script>
+
+</body>
+</html>
